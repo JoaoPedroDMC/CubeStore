@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*celular*/
+section {
+    width: 320px; 
+    margin: 38px auto; 
+    padding: 10px;
+    background-color: white;
+    border: white;
+    border-radius: 30px;
+}
+
+.Pesquisa {
+    height: 100px;
+    text-align: center;
+}
+
+.Produto {
+    height: auto; 
+}
+
+.input1 {
+    text-align: center;
+    border: solid;
+    width: 300px;
+    height: 25px;
+    color: var(--cor4);
+    border-color: var(--cor4);
+    border-radius: 30px;
+    background: url("../img/search.png") no-repeat;
+    background-position: 1em;
+    background-size: contain;
+}
+
+.container-produtos {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.produtos {
+    flex: 1 1 200px; 
+    max-width: 200px; 
+    height: 390px;
+    border: solid;
+    border-radius: 30px;
+    margin: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+}
+
+img {
+    width: 80%; 
+    height: auto; 
+    margin-top: 10px; 
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    section {
+        width: 600px; 
+    }
+
+    .input1 {
+        width: 200px;
+    }
+
+    img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/*computador*/
+@media screen and (min-width: 1200px) {
+    section {
+        width: 1000px; 
+    }
+
+    .input1 {
+        width: 500px;
+    }
+}
